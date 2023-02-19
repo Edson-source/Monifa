@@ -1,0 +1,106 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Recursos</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="/">Home</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Funcionalities</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- Function Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-5 mb-4">Como Funciona?</h1>
+                    <p class="mb-4">
+                        A tecnologia NFC (Near Field Communication) Funciona compartilhando por proximidade, você habilita a proximidade nfc do seu celular e aproxima o chaveiro do dispositivo então aparecerá o icone do seu navegador, é so clicar e pronto você compartilhou seu link. 
+                    </p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Tudo fica mais Facil</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Você fica mais Conectado</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>E ainda mostra seu Estilo</p>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <div class="px-2">Play Video</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <!-- <div class="about-img position-relative overflow-hidden p-5 pe-0"> -->
+                        <img class="img-fluid w-100" src="{% static 'img/about.png' %}">
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Function End -->
+
+    <!-- Feature Start -->
+    <div class="container-fluid my-5">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Nossos Recursos</h1>
+                <p>Queremos que você se sinta você mesmo e mostre para o mundo o que você quiser, por isso o nosso produto te da a possibilidade de:</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-secondary text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-1.png' %}" alt="">
+                        <h4 class="mb-3">Chaveiro Sustentável </h4>
+                        <p class="mb-4">Nossos chaveiros são feitos de acrilico um material 100% reciclável. <br> Um chaveiro sustentável que pode ser colocado em qualquer lugar. </p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-secondary text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-2.png' %}" alt="">
+                        <h4 class="mb-3">Foto Personalizavel</h4>
+                        <p class="mb-4">É você que escolhe a Foto para o seu chaveiro, por que se conectar com as pessoas é mostrar um pouquinho do que você gosta logo de cara.</p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-secondary text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-3.png' %}" alt="">
+                        <h4 class="mb-3">Link Personalizavel</h4>
+                        <p class="mb-4">Essa é a parte mais legal, você escolhe o link que quer compartilhar, pode ser o seu facebook, instagram ou a sua linketree.</p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+   
+{% endblock %}

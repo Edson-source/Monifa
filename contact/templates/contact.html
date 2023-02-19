@@ -1,0 +1,123 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Contato</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="/">Home</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-primary text-white d-flex flex-column justify-content-center h-100 p-5">
+                        <h5 class="text-white">Nos Contate</h5>
+                        <p class="mb-5"><i class="fa fa-phone-alt me-3"></i>+055 11 99557-1944</p>
+                        <h5 class="text-white">Email</h5>
+                        <p class="mb-5"><i class="fa fa-envelope me-3"></i>monifacompany@gmail.com</p>
+                        <h5 class="text-white">Endereço</h5>
+                        <p class="mb-5"><i class="fa fa-map-marker-alt me-3"></i>Av. Getulio Vargas - 1851, Araranguá, BR</p>
+                        <h5 class="text-white">Nos Siga</h5>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://twitter.com/mc_MonifaComp"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://www.instagram.com/mc_monifacomp/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-0" href="https://www.linkedin.com/company/mc_monifacomp/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4">O contato por mensagem está momentaneamente suspenso. Utilize os dados ao lado para entrar em contato</p>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Seu Nome</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Seu Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Assunto</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                    <label for="message">Mensagem</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Google Map Start -->
+    <!-- Distribuition Points Start -->
+    <div class="container-fluid bg-light my-5 py-6">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Pontos de Distribuição e Horarios</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-1.png' %}" alt="">
+                        <h4 class="mb-6">Pontos de Distribuição</h4>
+                        <div style="text-align: left;">
+                            <p class="mb-4"><i class="fa fa-map-marker-alt me-3"></i>Av. Getulio Vargas - 1851, Araranguá, BR</p>
+                            <p class="mb-4"><i class="fa fa-map-marker-alt me-3"></i>Restaurante Universitário</p>
+                            <p class="mb-4"><i class="fa fa-map-marker-alt me-3"></i>Centro - Araranguá</p>
+                            <p class="mb-4"><i class="fa fa-map-marker-alt me-3"></i>Hall - UFSC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-2.png' %}" alt="">
+                        <h4 class="mb-6">Horários</h4>
+                        <div style="text-align: left;">
+                            <p class="mb-4">Segundas aos Sábados: 8:00 às 18:00</p>
+                            <p class="mb-4">Domingos: 14:00 às 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl px-0 wow fadeIn" data-wow-delay="0.1s" style="margin-bottom: -6px;">
+        <iframe class="w-100" style="height: 450px;"
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJPWyadPQuIpURDHGeu1L4YGE&key=AIzaSyBIOeKKOg1GDOgesQCdZ4iXEExRRF3kRrQ"
+            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- Google Map End -->
+
+   
+{% endblock %}

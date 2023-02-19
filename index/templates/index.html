@@ -1,0 +1,252 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'img/carousel-1.png' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-black text-uppercase mb-md-3">CHAVEIROS NFC</h4>
+                            <h1 class="display-3 text-black mb-md-4">Torne mais facil compartilhar suas redes sociais</h1>
+                            <a href="/feature/" class="btn btn-primary py-md-3 px-md-5 mt-2">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{% static 'img/carousel-1.png' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-black text-uppercase mb-md-3">CHAVEIROS NFC</h4>
+                            <h1 class="display-3 text-black mb-md-4">Mostre um pouquinho de você para o mundo</h1>
+                            <a href="/feature/" class="btn btn-primary py-md-3 px-md-5 mt-2">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{% static 'img/carousel-1.png' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-black text-uppercase mb-md-3">CHAVEIROS NFC</h4>
+                            <h1 class="display-3 text-black mb-md-4">Quebre o gelo com novos amigos</h1>
+                            <a href="/feature/" class="btn btn-primary py-md-3 px-md-5 mt-2">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <!-- <div class="about-img position-relative overflow-hidden p-5 pe-0"> -->
+                        <img class="img-fluid w-100" src="{% static 'img/about.png' %}">
+                    <!-- </div> -->
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-5 mb-4">O que é um Chaveiro NFC?</h1>
+                    <p class="mb-4">
+                        A nova tecnologia NFC (Near Field Communication) possibilita o compartilhamento do link que você quiser com quem você quiser <br> É so aproximar o seu chaveiro do celular e pronto.
+                    </p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Tenha mais Facilidade</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Seja mais Conectado</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Mostre seu Estilo</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="feature.html">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light my-5 py-6">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Nossos Recursos</h1>
+                <p>Queremos que você se sinta você mesmo e mostre para o mundo o que você quiser, por isso o nosso produto te da a possibilidade de:</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-secondary text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-1.png' %}" alt="">
+                        <h4 class="mb-3">Chaveiro Sustentável </h4>
+                        <p class="mb-4">Nossos chaveiros são feitos de acrilico um material 100% reciclável. <br> Um chaveiro sustentável que pode ser colocado em qualquer lugar. </p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-secondary text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-2.png' %}" alt="">
+                        <h4 class="mb-3">Foto Personalizavel</h4>
+                        <p class="mb-4">É você que escolhe a Foto para o seu chaveiro, por que se conectar com as pessoas é mostrar um pouquinho do que você gosta logo de cara.</p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-secondary text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="{% static 'img/icon-3.png' %}" alt="">
+                        <h4 class="mb-3">Link Personalizavel</h4>
+                        <p class="mb-4">Essa é a parte mais legal, você escolhe o link que quer compartilhar, pode ser o seu facebook, instagram ou a sua linketree.</p>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Product Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 gx-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="section-header text-start mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-5 mb-3">Produtos</h1>
+                        <p>Você também pode escolher do nosso catalogo de Fotos e Links:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="{% static 'img/fuck_rosa.jpeg' %}" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Chaveiro Mordecai</a>
+                                    <span class="text-primary me-1">R$15.00</span>
+                                    <span class="text-body text-decoration-line-through">R$29.00</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="detail.html"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href="https://wa.me/551195571944?text=Oi,%20Bom%20dia"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="{% static 'img/simpson_rosa.jpeg' %}" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="detailHomer.html">Chaveiro Homer</a>
+                                    <span class="text-primary me-1">R$15.00</span>
+                                    <span class="text-body text-decoration-line-through">R$29.00</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="detailHomer.html"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href="https://wa.me/551195571944?text=Oi,%20Bom%20dia"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="{% static 'img/flash_rosa.jpeg' %}" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Chaveiro Preguiça</a>
+                                    <span class="text-primary me-1">R$15.00</span>
+                                    <span class="text-body text-decoration-line-through">R$29.00</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="detailFlash.html"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href="https://wa.me/551195571944?text=Oi,%20Bom%20dia"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="{% static 'img/rick_rosa.jpeg' %}" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="detailRick.html">Chaveiro Rick</a>
+                                    <span class="text-primary me-1">R$15.00</span>
+                                    <span class="text-body text-decoration-line-through">R$29.00</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="detailRick.html"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href="https://wa.me/551195571944?text=Oi,%20Bom%20dia"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="/product/">Browse More Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+
+    <!-- Firm Visit Start -->
+    <div id= "section-tag">
+        <div class="container-fluid bg-primary mt-5 py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
+                        <h1 class="display-5 text-white mb-3">Você nos Visitou pelo Planfeto?</h1>
+                        <h3 class="display-10 text-white mb-3">Bem Vindo ao Caça Tag.</h3>                    
+                        <p class="text-white mb-0">O Caça Tag é uma promoção em que se você achar o planfeto sorteada você ganha um chaveiro a sua escolha. É so aproximar seu celular do panfleto Monifa e tentar a sorte, se você for sorteado ou sorteada, aparecerá um formulario de cadastro e te enviaremos seu chaveiro NFC. <br> Boa Sorte a Todos e que a Caça comece! </p>
+                    </div>
+                    <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
+                        <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="">Visit Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Firm Visit End -->
+
+    <!-- Back to Top -->
+    <a href="#section-tag" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-tag mb-5">
+        <img src="{% static 'img/icon-pro.gif' %}" alt="" class="rounded-circle">
+    </a>
+{% endblock %}
