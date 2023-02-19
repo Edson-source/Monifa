@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'detail.apps.DetailConfig',
     'contact.apps.ContactConfig',
     'about.apps.AboutConfig',
+    'ckeditor',
     'ckeditor_uploader',
 ]
 
