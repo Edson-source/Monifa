@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'index.apps.IndexConfig',
     'product.apps.ProductConfig',
     'feature.apps.FeatureConfig',
-    'detail.apps.DetailConfig',
     'contact.apps.ContactConfig',
     'about.apps.AboutConfig',
     'ckeditor',

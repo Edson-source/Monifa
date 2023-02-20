@@ -1,0 +1,174 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Detalhes do produto:</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="/">Home</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Shop Detail Start -->
+    <div class="container-fluid pb-5">
+        <div class="row px-xl-5">
+            <div class="col-lg-5 mb-30">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        {{db.image | safe}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 h-auto mb-30 container-fluid" id="portfolio">
+                <div class="container h-100 p-30">
+                    <h3>{{db.title}}</h3>
+                    <div class="d-flex mb-3">
+                        <div class="text-primary mr-2">
+                            <small class="fas fa-star"></small>
+                            <small class="fas fa-star"></small>
+                            <small class="fas fa-star"></small>
+                            <small class="fas fa-star"></small>
+                            <small class="fas fa-star"></small>
+                        </div>
+                    </div>
+                    <h3 class="font-weight-semi-bold mb-4">R${{db.price}}0</h3>
+                    <p class="mb-4">Chaveiros personalizados com tecnologia de aproximação NFC</p>
+                    <div class="row">
+                        <div class="col-12 text-left mb-2">
+                            <ul class="list-inline mb-4" id="portfolio-filters" >
+                                <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">WhatsApp</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Instagram</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">LinkedIn</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".fourth">Twitter</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".fifth">Facebook</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".seventh">OUTRO LINK</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 mb-4 portfolio-item all" >
+                        <div class="position-relative overflow-hidden mb-2">
+                            <p class="mb-4">Escolha uns dos links abaixo e click em comprar, lembre-se em cada chaveiro você so pode ter um link!</p>
+                        </div>
+                    </div>
+                    <div class="row portfolio-container" >
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="WhatsApp" name="WhatsApp" value="" placeholder="(48) 91234-5678">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="Instagram" name="Instagram" value="" placeholder="www.instagram.com/user">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="LinkedIn" name="LinkedIn" value="" placeholder="www.linkedin.com/user">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="Twitter" name="Twitter" value="" placeholder="www.twitter.com/user">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item fifth">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="Facebook" name="Facebook" value="" placeholder="www.facebook.com/user">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item seventh">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="Outro" name="Outro" value="" placeholder="www.outrolink.com">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-4 portfolio-item">
+                            <div class="hidden">
+                                <input type="text" id="Description" value={{db.description}}>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="align-items: center; justify-content: center; display: flex;margin-bottom: -50px; ">
+                        <div class="flex-column col-lg-4 col-md-6 mb-4 " style="padding-bottom: 20px; " >
+                            <a onclick="gotowhatsapp()" class="btn btn-primary py-md-3 px-md-5 mt-2 rounded-pill" style="padding: 1.375rem 4.75rem; ">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="d-flex pt-2" style=" padding-bottom: 30px; ">
+                        <strong class="text-dark mr-2">Compartilhe no:</strong>
+                        <div class="d-inline-flex">
+                            <a class="text-dark px-2" href="https://www.instagram.com/mc_monifacomp/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="text-dark px-2" href="https://twitter.com/mc_MonifaComp">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="text-dark px-2" href="https://www.linkedin.com/company/mc_monifacomp/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="p-30">
+                    <div class="nav nav-tabs mb-4">
+                        <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">Descrição</a>
+                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Informações</a>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <h4 class="mb-3">Descrição do produto</h4>
+                            <p>Produto feito de acrilico com imagem personalizada e com uma tag NFC com todos os links que você desejar</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <h4 class="mb-3">Informações adicionais</h4>
+                            <p>A tag pode ser configurada com os links desejados porém pense com cuidado, pois pode ser configurado apenas uma vez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shop Detail End -->
+
+    {% include 'product_section.html' %}
+
+    <!--Script WhatsApp-->
+    <script>
+        function gotowhatsapp(){
+            var whats = document.getElementById("WhatsApp").value;
+            var insta = document.getElementById("Instagram").value;
+            var linkedin = document.getElementById("LinkedIn").value;
+            var twitter = document.getElementById("Twitter").value;
+            var facebook = document.getElementById("Facebook").value;
+            var personagem = document.getElementById("Description").value;
+            var outro = document.getElementById("Outro").value;
+
+            var url = 
+            "https://wa.me/551195571944?text=" +
+            "Quero comprar um chaveiro do(a): " +
+            personagem +
+            " com o link/número: " +
+            whats +
+            insta +
+            linkedin +
+            twitter +
+            facebook +
+            outro;
+
+            window.open(url, "_blank").focus();
+        }
+    </script>
+
+{% endblock %}
