@@ -43,8 +43,10 @@ INSTALLED_APPS = [
     'feature.apps.FeatureConfig',
     'contact.apps.ContactConfig',
     'about.apps.AboutConfig',
+    'partner.apps.PartnerConfig',
     'ckeditor',
     'ckeditor_uploader',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
