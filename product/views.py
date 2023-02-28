@@ -17,6 +17,9 @@ def detail(request, pk):
     products['db'] = Product.objects.get(pk=pk)
     return render(request, 'detail.html', products)
 
+def tag_hunting(request):
+    return render(request, 'tag_hunting.html')
+
 class ProductViewSet(viewsets.ModelViewSet):
     """EXIBINDO TODOS OS PRODUTOS"""
     queryset = Product.objects.all()

@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content%}
+
+    <!-- Caça Tag Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'img/tag_hunting.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="display-10 text-black mb-md-4">Se você chegou até aqui, significa que encontrou nossa tag</h4>
+                            <h1 class="display-3 text-black mb-md-4">Bem Vindo ao Caça Tag.</h1>
+                        </div>
+                        <div class="display-10 bg-white">
+                            <p> <h4 class="display-10 text-black">  Está pronto para embarcar em uma aventura emocionante? O Caça Tag chegou e estamos à procura de corajosos exploradores para encontrar nossas tags NFC escondidas em toda a cidade! Basta pegar o seu celular e começar a explorar. Quando encontrar uma tag, escaneie-a para descobrir o que há por trás dela.</p>
+    
+                            <p> <h4 class="display-10 text-black">  Se você for um dos sortudos que encontrar uma tag, será levado para uma página exclusiva com uma promoção especial para você! E isso não é tudo, você também ganhará um chaveiro grátis como prova de sua habilidade em encontrar a tag!</p>
+    
+                            <p> <h4 class="display-10 text-black">  Então, prepare-se para sair e explorar com o Caça Tag - sua próxima grande aventura espera por você!</p>
+    
+                            <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="/product/">Conheça nossos chaveiros</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                    
+    <!-- Caça Tag End -->
+
+{% endblock %}

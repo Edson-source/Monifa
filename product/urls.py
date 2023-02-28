@@ -14,5 +14,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('product/', views.product),
     path('detail/<int:pk>/', views.detail),
+    path('tag_hunting/', views.tag_hunting),
     path('purchase/<int:pk>/', ListaCustomerProduct.as_view()),
 ]
