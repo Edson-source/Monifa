@@ -1,0 +1,76 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block titulo %}
+  Página Cadastro
+{% endblock %}
+
+{% block content %}
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto col-12 my-5">
+                <div class="row">
+                    <div class="col-lg-8 col-11 mx-auto">
+                        <form role="form" action="{% if db %} /edit/{{db.id}}/ {% else %} /create/ {% endif %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-floating my-4">
+                                {{formu.username}}
+                            </div>
+
+                            <div class="form-floating my-4">
+                                {{formu.age}}
+                            </div>
+
+                            <div class="form-floating my-4">
+                                {{formu.gender}}
+                            </div>
+
+                            <div class="form-floating">
+                                {{formu.email}}
+                            </div>
+
+                            <div class="form-floating my-4">
+                                <input type="password" name="password" pattern="[0-9a-zA-Z]{4,10}" {{formu.password}}
+                                
+                                <p class="text-center">* Deve incluir 0-9 a-z A-Z de 4 a 10 caracteres</p>
+                            </div>
+
+                            <button type="submit" class="btn custom-btn form-control mt-4 mb-3">
+                                Create account
+                            </button>
+
+                            <p class="text-center">Already have an account? Please <a href="/sign_in/">Sign In</a></p>
+
+                        </form>
+                    </div>
+                    {{formu.errors}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <script>
+
+		    //Query All input fields
+		    var form_fields = document.getElementsByTagName('input')
+		    form_fields[1].placeholder='Username..';
+		    form_fields[2].placeholder='Age..';
+		    form_fields[3].placeholder='Email..';
+		    form_fields[4].placeholder='Password..';
+		    form_fields[5].placeholder='Enter password...';
+
+
+		    for (var field in form_fields){	
+			    form_fields[field].className += ' form-control'
+		    }
+	    </script>
+{% endblock %}
+
+<!-- <input type="text" name="username" id="username" class="form-control" placeholder="Username" required 
+     <input type="email" name="email" id="email" class="form-control" placeholder="Email" required
+     <input type="password" name="password" id="password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Password" required
+     <input type="password" name="confirm_password" id="confirm_password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Password" required -->

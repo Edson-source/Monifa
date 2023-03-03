@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'contact.apps.ContactConfig',
     'about.apps.AboutConfig',
     'partner.apps.PartnerConfig',
+    'sign_up.apps.SignUpConfig',
     'ckeditor',
     'ckeditor_uploader',
     'rest_framework',
