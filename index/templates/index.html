@@ -76,6 +76,24 @@
     </div>
     <!-- Firm Visit End -->
 
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="align-items-center align-content-center embed-responsive-21by9">
+                        <iframe width="348" height="618" src="https://www.youtube.com/embed/-mzFIB4UCx0" title="feature video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -88,12 +106,28 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h1 class="display-5 mb-4">O que é um Chaveiro NFC?</h1>
                     <p class="mb-4">
-                        A nova tecnologia NFC (Near Field Communication) possibilita o compartilhamento do link que você quiser com quem você quiser <br> É so aproximar o seu chaveiro do celular e pronto.
+                        Você está cansado de ter que digitar seus dados manualmente toda vez que conhece alguém novo? Quer compartilhar suas informações facilmente e sem esforço? Então você precisa do chaveiro NFC!
+                        <br>
+                        Com a nova tecnologia NFC, agora é possível compartilhar seus dados com quem você quiser, de maneira rápida e simples. Basta aproximar seu chaveiro do celular e seus dados serão automaticamente transferidos para a pessoa com quem você está compartilhando.
+                        <br>
+                        Este chaveiro é perfeito para profissionais de negócios, estudantes, e todos aqueles que estão sempre em movimento e precisam compartilhar seus dados frequentemente. O chaveiro NFC é como um cartão de visita, mas ainda mais fácil de usar.
+                        <br>
+                        Não perca mais tempo digitando informações manualmente, experimente o chaveiro NFC hoje e descubra como é fácil compartilhar seus dados!
                     </p>
                     <p><i class="fa fa-check text-primary me-3"></i>Tenha mais Facilidade</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Seja mais Conectado</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Mostre seu Estilo</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="/about/">Saiba mais</a>
+                    
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="/about/">Saiba mais</a>
+                        
+                        <div class="px-3"></div>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <div class="px-3">Play Video</div>
+                    </div>
                 </div>
             </div>
         </div>
